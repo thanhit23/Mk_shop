@@ -4,22 +4,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Register</title>
+  <title>Trung Tâm Trợ Giúp</title>
   <link rel="stylesheet" href="/resource/css/header.css">
   <link rel="stylesheet" href="/resource/css/footer.css">
-  <link rel="stylesheet" href="/resource/css/register.css">
+  <link rel="stylesheet" href="/resource/css/help_center.css">
+  <link rel="icon" href="/resource/image/mk-logo.png" type="image/x-icon">
   <script src="https://kit.fontawesome.com/5b900cdeed.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
-  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-  <div id="register">
+  <section id="overview-help">
     <header id="header">
       <div class="header-wrapper">
         <div class="nav navbar-small">
           <ul class="nav nav-list">
             <li class="nav--item">
-              <a href="javascript:void(0)">Sản Phẩm</a>
+              <a href="#tabs-product">Sản Phẩm</a>
             </li>
             <li class="nav--item">
               <a href="javascript:void(0)">
@@ -42,7 +41,7 @@
               </a>
             </li>
             <li class="nav--item">
-              <a href="#">
+              <a href="/pages/register.html">
                 Đăng Ký
                 <!-- <div class="avatar-wrapper">
                   <img src="./resource/image/avatar.png" alt="avatar">
@@ -53,52 +52,67 @@
         </div>
       </div>
     </header>
-    <div class="container-main">
-      <div class="container-main-wrapper">
-        <div class="container">
-          <div class="row form-register-wrapper">
-            <div class="col-md-6" style="display: flex;justify-content: center;">
-              <div class="img-logo-page">
-                <a href="/index.html">
-                  <img src="/resource/image/logo-page-cart.png" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="col-md-6" style="display: flex;justify-content: center;">
-              <form  method="get" class="form" id="form-1">
-                <h3 class="heading">Đăng Ký</h3>
-                <div class="form-group">
-                  <label for="fullname" class="form-label">Họ Và Tên<span class="required">*</span></label>
-                  <input id="fullname" name="fullname" type="text" placeholder="Tên của bạn" class="form-register form-control">
-                  <span class="form-message"></span>
-                </div>
-                <div class="form-group">
-                  <label for="phoneNumber" class="form-label">Số Điện Thoại<span class="required">*</span></label>
-                  <input id="phoneNumber" name="phoneNumber" type="text" placeholder="Số điện thoại của bạn" class="form-register form-control">
-                  <span class="form-message"></span>
-                </div>
-                <div class="form-group">
-                  <label for="email" class="form-label">Email<span class="required">*</span></label>
-                  <input id="email" name="email" type="text" placeholder="Email của bạn" class="form-register form-control">
-                  <span class="form-message"></span>
-                </div>
-                <div class="form-group">
-                  <label for="password" class="form-label">Password<span class="required">*</span></label>
-                  <input id="password" name="password" placeholder="Nhập password của bạn" type="password" class="form-register form-control">
-                  <span class="form-message"></span>
-                </div>
-                <div class="form-group">
-                  <label for="re-enter-password" class="form-label">Re-Password<span class="required">*</span></label>
-                  <input id="re-enter-password" name="re-enter-password" placeholder="Nhập lại password của bạn" type="password" class="form-register form-control">
-                  <span class="form-message"></span>
-                </div>
-                <button class="form-submit">Đăng ký</button>
-              </form>
-            </div>
-          </div>
+    <div class="header-cart">
+      <div class="header-with-search-wrapper">
+        <div id="logo" class="col-lg-1">
+          <a href="/index.html" >
+            <img src="/resource/image/logo-page-cart.png" alt="">
+          </a>
+        </div>
+        <div class="header-cart-wrapper">
+          <p class="header-cart-title">Trung Tâm Hổ Trợ</p>
         </div>
       </div>
     </div>
+    <section id="main-help-center">
+      <div class="frequently-asked-questions">
+        <div class="faq faq-wrapper">
+          <p class="faq_title">Câu Hỏi Thường Gặp</p>
+          <ul class="faq_list-questions">
+            <li class="questions--item">
+              <a href="javascrip:void(0)">[Cảnh báo lừa đảo] Mua sắm an toàn cùng MK</a>
+            </li>
+            <li class="questions--item">
+              <a href="javascrip:void(0)">[Thành viên mới] Quy trình trả hàng hoàn tiền của MK</a>
+            </li>
+            <li class="questions--item">
+              <a href="javascrip:void(0)">[Tài khoản MK] Tại sao tôi không nhận được Mã xác minh (OTP)?</a>
+            </li>
+            <li class="questions--item">
+              <a href="javascrip:void(0)">[Thành viên mới] Cách theo dõi tình trạng vận chuyển của đơn hàng?</a>
+            </li>
+            <li class="questions--item">
+              <a href="javascrip:void(0)">[Lỗi] Tại sao tài khoản MK của tôi bị khóa/bị giới hạn?</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="help-center_content">
+        <div class="information-contact">
+          <div class="contact-email">
+            <div class="icon-address">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="content-address">
+              <p class="address_title">Email</p>
+              <p class="address_content">Gửi câu hỏi của bạn</p>
+            </div>
+          </div>
+          <div class="contact-phone-number">
+            <div class="icon-address">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="content-address">
+              <p class="address_title">Phone Number</p>
+              <p class="address_content">Gọi cho chúng tôi nếu bạn có thắc mắc</p>
+            </div>
+          </div>
+        </div>
+        <div class="frequently-asked-questions">
+  
+        </div>
+      </div>
+    </section>
     <footer id="footer">
       <div class="container-footer">
         <div class="footer-list">
@@ -191,7 +205,6 @@
         </div>
       </div>
     </footer>
-  </div>
-  <script src="/resource/js/register.js"></script>
+  </section>
 </body>
 </html>

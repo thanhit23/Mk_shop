@@ -12,8 +12,8 @@ const products = [
       srcImg_5: 'https://cf.shopee.vn/file/376114d806f5d80b48cb45d9935826f2',
     },
     price: {
-      price_of: '₫125.000',
-      price_new: '₫75.000',
+      price_of: '125.000',
+      price_new: '75.000',
     },
     percentage: '40%',
     quantitySold: '2k',
@@ -29,8 +29,8 @@ const products = [
       srcImg_5: 'https://cf.shopee.vn/file/0b4bc7129d4717eeabaa0f8fd8cf9a6e',
     },
     price: {
-      price_of: '₫90.000',
-      price_new: '₫55.000',
+      price_of: '90.000',
+      price_new: '55.000',
     },
     percentage: '41%',
     quantitySold: '23,8k',
@@ -46,8 +46,8 @@ const products = [
       srcImg_5: 'https://cf.shopee.vn/file/11cc39a5f7a54a76c0b887127906ee00',
     },
     price: {
-      price_of: '₫69.000 - ₫109.000',
-      price_new: '₫68.000',
+      price_of: '69.000 - 109.000',
+      price_new: '68.000',
     },
     percentage: '37%',
     quantitySold: '691',
@@ -63,8 +63,8 @@ const products = [
       srcImg_5: 'https://cf.shopee.vn/file/00cdb794a66170f3f7cab47a0550474e',
     },
     price: {
-      price_of: 'đ98.000',
-      price_new: 'đ65.000',
+      price_of: '98.000',
+      price_new: '65.000',
     },
     percentage: '34%',
     quantitySold: '5,6k',
@@ -80,8 +80,8 @@ const products = [
       srcImg_5: 'https://cf.shopee.vn/file/cd00eb7c7e1b9387a4d3a7157234641d',
     },
     price: {
-      price_of: 'đ65.000',
-      price_new: 'đ27.000',
+      price_of: '65.000',
+      price_new: '27.000',
     },
     percentage: '58%',
     quantitySold: '1,5k',
@@ -97,8 +97,8 @@ const products = [
       srcImg_5: 'https://cf.shopee.vn/file/d624866812aed527dd40373d09a07933',
     },
     price: {
-      price_of: 'đ120.000',
-      price_new: 'đ69.000',
+      price_of: '120.000',
+      price_new: '69.000',
     },
     percentage: '43%',
     quantitySold: '2,3k',
@@ -114,8 +114,8 @@ const products = [
       srcImg_5: 'https://cf.shopee.vn/file/a9ac01c6fc24bf3f05453231467e16ce',
     },
     price: {
-      price_of: '₫320.000',
-      price_new: '₫262.400',
+      price_of: '320.000',
+      price_new: '262.400',
     },
     percentage: '18%',
     quantitySold: '365',
@@ -131,8 +131,8 @@ const products = [
       srcImg_5: 'https://cf.shopee.vn/file/2769603a770082874a0c72fdf5d26d96',
     },
     price: {
-      price_of: '₫18.000',
-      price_new: '₫13.500',
+      price_of: '18.000',
+      price_new: '13.500',
     },
     percentage: '25%',
     quantitySold: '126',
@@ -148,8 +148,8 @@ const products = [
       srcImg_5: 'https://cf.shopee.vn/file/ff770a3b8c6098e38b4c481e4dad2f6f',
     },
     price: {
-      price_of: '₫22.000',
-      price_new: '₫11.490',
+      price_of: '22.000',
+      price_new: '11.490',
     },
     percentage: '48%',
     quantitySold: '290',
@@ -165,8 +165,8 @@ const products = [
       srcImg_5: 'https://cf.shopee.vn/file/bb62d62bcb181f7d0d6dcf922770a618',
     },
     price: {
-      price_of: '₫266.000',
-      price_new: '₫149.500',
+      price_of: '266.000',
+      price_new: '149.500',
     },
     percentage: '44%',
     quantitySold: '52',
@@ -182,8 +182,8 @@ const products = [
       srcImg_5: 'https://cf.shopee.vn/file/bb62d62bcb181f7d0d6dcf922770a618',
     },
     price: {
-      price_of: '₫43.600 - ₫218.000',
-      price_new: '₫21.800',
+      price_of: '43.600 - 218.000',
+      price_new: '21.800',
     },
     percentage: '50%',
     quantitySold: '1,2k',
@@ -199,23 +199,14 @@ const products = [
       srcImg_5: 'https://cf.shopee.vn/file/0e081d9f72981c7c79ce7e7b15d86eba',
     },
     price: {
-      price_of: '₫160.000',
-      price_new: '₫83.000',
+      price_of: '160.000',
+      price_new: '83.000',
     },
     percentage: '48%',
     quantitySold: '5,9',
   },
 ]
-const cart = [
-  {
-    id: '1',
-    name: "Đèn ngủ LED đổi màu hình hoạt hình Baymax xinh xắn",
-    src: "https://cf.shopee.vn/file/5ab747468537cb25e026fbe028de1a1f_tn",
-    priceNew: "₫11.490",
-    priceOf: "₫22.000",
-    quantity: 2,
-  },
-]
+const cart = []
 
 window.addEventListener('scroll', () => {
   handleScroll();
@@ -243,7 +234,7 @@ function redering() {
                 <p class="name-product">${product.name}</p>
               </div>
               <div class="price-product">
-                <span class="price">${product.price.price_new}</span>
+                <span class="price">đ${product.price.price_new}</span>
                 <p class="quantity-sold">đã bán ${product.quantitySold}</p>
               </div>
             </div>
@@ -321,10 +312,10 @@ function rederingImgProduct() {
           </div>
           <div class="product--price">
             <div class="_product-price-of">
-              <p class="price-of">${dataProduct.price.price_of}</p>
+              <p class="price-of">đ${dataProduct.price.price_of}</p>
             </div>
             <div class="_product-price-new">
-              <p class="price-new">${dataProduct.price.price_new}</p>
+              <p class="price-new">đ${dataProduct.price.price_new}</p>
             </div>
             <div class="_product-percentage-discount">
               <p class="percentage-discount">${dataProduct.percentage} giảm</p>
@@ -385,6 +376,8 @@ function renderCartProduct() {
   const dbCart = JSON.parse(dbCartJson)
   cart.push(dbCart);
   const html = cart.map(e => {
+    const priceNewNumber = Number(e.priceNew.replace('.', ''));
+    const price = (priceNewNumber * e.quantity).toLocaleString('en-US')
     return `
       <div class="cart-product--item" data-id="${e.id}">
         <div class="product__checkbox">
@@ -401,13 +394,13 @@ function renderCartProduct() {
           </div>
         </div>
         <div class="product__unit_price">
-            <p class="unit-price-of">${e.priceOf}</p>
-            <p class="unit-price-new">${e.priceNew}</p>
+            <p class="unit-price-of">đ${e.priceOf}</p>
+            <p class="unit-price-new">đ${e.priceNew}</p>
         </div>
         <div class="product__amount">
           <input type="text" name="" class="input__product--selected" value="${e.quantity}">
         </div>
-        <div class="product__amount_money">${e.priceNew}</div>
+        <div class="product__amount_money">đ<span>${price}</span></div>
         <div class="product__manipulation">
           <p class="__manipulation--delete">Xoá</p>
         </div>

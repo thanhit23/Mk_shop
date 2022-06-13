@@ -47,7 +47,8 @@ body {
   font-size: 16px;
 }
 .cf-checkbox,
-.product__checkbox {
+.product__checkbox,
+.payment-checkbox {
   display: flex;
   width: 5%;
   justify-content: center;
@@ -171,5 +172,33 @@ body {
 .__manipulation--delete {
   margin: 0;
   padding: 5px 15px;
+  cursor: pointer;
+}
+.product-payment-container {
+  background-color: #fff;
+  margin-top: 50px;
+}
+.product-payment-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+}
+.payment-select-all {
+  /* width: 50%; */
+  flex: 1;
+}
+.total-payment {
+  font-size: 25px;
+  color: #ed4d2d;
+  font-weight: 600;
+  margin: 0 10px;
+}
+.btn-buy-product {
+  padding: 10px 50px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #2a5aff;
+  border-radius: 2px;
   cursor: pointer;
 }

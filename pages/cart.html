@@ -21,22 +21,22 @@
           </li>
           <li class="nav--item">
             <a href="javascript:void(0)">
-              Thông Báo
               <i class="fa-solid fa-bell"></i>
+              Thông Báo
             </a>
           </li>
           <li class="nav--item">
-            <a href="javascript:void(0)">
-              Liên Hệ
+            <a href="./help_center.html">
               <i class="fa-solid fa-address-book"></i>
+              Trung Tâm Trợ giúp
             </a>
           </li>
         </ul>
         <ul class="nav nav-list">
           <li class="nav--item">
             <a href="javascript:void(0)">
-              Ngôn Ngữ
               <i class="fa-solid fa-earth-europe"></i>
+              Ngôn Ngữ
             </a>
           </li>
           <li class="nav--item">
@@ -78,7 +78,20 @@
         <div class="cf-amount_money">Số Tiền</div>
         <div class="cf-manipulation">Thao tác</div>
       </div>
-      <div class="cart-product--list" id="cart-product">
+      <div class="cart-product--list" id="cart-product"></div>
+      <div class="product-payment-container">
+        <div class="product-payment-wrapper">
+          <div class="payment-checkbox">
+            <label for="payment_select-all" class="cf_select-product">
+              <input class="cf_stardust-checkbox__input" type="checkbox" id="payment_select-all">
+              <div class="cf_stardust-checkbox__box"></div>
+            </label>
+          </div>
+          <div class="payment-select-all">Chọn Tất Cả</div>
+          <div>Tổng Thanh Toán</div>
+          <div id="total-payments" class="total-payment">đ<span>0</span></div>
+          <div class="btn btn-buy-product">Mua Hàng</div>
+        </div>
       </div>
     </div>
   </section>
