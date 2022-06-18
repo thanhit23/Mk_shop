@@ -1,9 +1,8 @@
 html {
   font-size: 62.5%;
 }
-header {
-  height: 50px;
-  display: flex !important;
+.header-wrapper {
+  height: 55px;
 }
 .container-main {
   margin-top: 50px;

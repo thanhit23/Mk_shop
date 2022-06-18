@@ -4,6 +4,7 @@
   padding-top: 50px;
   border-top: 3px solid #2a5aff;
   padding-bottom: 50px;
+  margin-top: 40px;
 }
 .container-footer {
   max-width: 1200px;
@@ -32,6 +33,16 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+#logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a5aff;
+  border-radius: 50%;
+}
+#logo a img {
+  width: 100px;
 }
 .--content-item {
   font-size: 14px;

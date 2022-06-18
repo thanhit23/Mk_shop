@@ -3,34 +3,22 @@ header {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 2;
-  height: 120px;
-  display: flex;
-  align-items: center;
   transition: all 500ms;
-  background: linear-gradient(-180deg,#2a5aff,#62bfed);
+  z-index: 10;
 }
 .header-wrapper {
-  width: 1200px;
-  margin: auto;
+  position: relative;
   display: flex;
   flex-direction: column;
+  background-color: #2a5aff;
 }
 .navbar-small {
+  width: 1200px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin: 10px auto;
 }
-#logo a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#logo a img {
-  width: 90px;
-  height: 60px;
-  object-fit: cover;
-}
+
 .nav-list {
   display: flex;
   margin: 0;
@@ -61,7 +49,7 @@ header {
   text-decoration: none;
 }
 .nav--item a i {
-  font-size: 18px;
+  font-size: 15px;
   margin-right: 5px;
 }
 .avatar-wrapper {
@@ -72,39 +60,67 @@ header {
   width: 100%;
   border-radius: 50%
 }
+.search--box {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  transition: all 500ms;
+}
+.search-btn {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.search__box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  padding: 5px 8px;
+  border-radius: 40px;
+  height: 30px;
+  background: #fff;
+  align-items: center;
+}
+.search__box:hover .search-txt {
+  width: 240px;
+}
+.search-box:hover .search-btn {
+  background: #fff;
+}
 
-.header-with-search-wrapper {
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  color: #fff;
+  transition: 0.5s;
+  font-size: 1rem;
+  width: 0px;
+}
+
+.search-btn {
+  color: #1abc9c;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.5s;
 }
-
-.input-search-main {
-  padding: 3px;
-  background-color: #fff;
-}
-.form-search {
-  width: 600px;
-  height: 30px;
-  font-size: 16px;
-  line-height: 18px;
-  outline: none;
-  border: none;
-}
-.icon_magnifying {
-  padding: 7px 20px;
-  font-size: 18px;
-  background-color: #2a5aff;
-  color: #fff;
-  border-radius: 3px;
-  cursor: pointer;
+.fa-magnifying-glass {
+  margin-left: 5px;
+  color: #2a5aff;
 }
 .icon_cart {
   padding: 5px;
   font-size: 25px;
   color: #fff;
   cursor: pointer;
-}
-.icon_cart:hover {
-  opacity: 0.6;
 }

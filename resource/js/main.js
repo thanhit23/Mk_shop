@@ -1,5 +1,7 @@
 const headerElement = document.querySelector('#header');
 const productElement = document.querySelector('.panel__list');
+const searchElement = document.querySelector('.search__box');
+const searchBox = document.querySelector('.search--box');
 const products = [
   {
     id: 1,
@@ -208,16 +210,14 @@ const products = [
 ]
 const cart = []
 
-window.addEventListener('scroll', () => {
-  handleScroll();
-})
 
-function handleScroll() {
-  if (window.scrollY >= 150) {
-    headerElement.style.height = '105px'
-  } else if (window.scrollY < 150) {
-    headerElement.style.height = '120px'
-  };
+if (searchElement) {
+  searchElement.addEventListener('mouseover', () => {
+    searchBox.style.width = '280px';
+  })
+  searchElement.addEventListener('mouseout', () => {
+    searchBox.style.width = '40px';
+  })
 }
 
 function redering() {
@@ -289,61 +289,52 @@ function rederingImgProduct() {
       </div>
       <div class="product__information">
         <div class="product__information-wrapper">
-          <div class="product__name--title">
-            <p class="_name--title">${dataProduct.name}</p>
-          </div>
-          <div class="product--assess-container">
-            <div class="product-assess-wrapper">
-              <div class="_product--assess">
-                <span class="_assess">4.0</span>
+          <div>
+            <div class="product__name--title">
+              <p class="_name--title">${dataProduct.name}</p>
+            </div>
+            <div class="product--assess-container">
+              <div class="product-assess-wrapper">
+                <div class="_product--assess">
+                  <span class="_assess">4.0</span>
+                </div>
+                <div class="_product--star">
+                  <i class="fa-solid fa-star _star"></i>
+                  <i class="fa-solid fa-star _star"></i>
+                  <i class="fa-solid fa-star _star"></i>
+                  <i class="fa-solid fa-star _star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
               </div>
-              <div class="_product--star">
-                <i class="fa-solid fa-star _star"></i>
-                <i class="fa-solid fa-star _star"></i>
-                <i class="fa-solid fa-star _star"></i>
-                <i class="fa-solid fa-star _star"></i>
-                <i class="fa-solid fa-star"></i>
+              <div class="_product--quantity-sold">
+                <span class="_quantity">${dataProduct.quantitySold}</span>
+                <span class="_sold">đã bán</span>
               </div>
             </div>
-            <div class="_product--quantity-sold">
-              <span class="_quantity">${dataProduct.quantitySold}</span>
-              <span class="_sold">đã bán</span>
+            <div class="product--price">
+              <div class="_product-price-of">
+                <p class="price-of">đ${dataProduct.price.price_of}</p>
+              </div>
+              <div class="_product-price-new">
+                <p class="price-new">đ${dataProduct.price.price_new}</p>
+              </div>
+              <div class="_product-percentage-discount">
+                <p class="percentage-discount">${dataProduct.percentage} giảm</p>
+              </div>
             </div>
-          </div>
-          <div class="product--price">
-            <div class="_product-price-of">
-              <p class="price-of">đ${dataProduct.price.price_of}</p>
-            </div>
-            <div class="_product-price-new">
-              <p class="price-new">đ${dataProduct.price.price_new}</p>
-            </div>
-            <div class="_product-percentage-discount">
-              <p class="percentage-discount">${dataProduct.percentage} giảm</p>
-            </div>
-          </div>
-          <div class="_product--selected-color">
-            <div class="selected-color__title">
-              <p class="_color">Màu</p>
-            </div>
-            <div class="_selected-color">
-              <div class="__color-item" data-color="green">Xanh</div>
-              <div class="__color-item" data-color="black">Đen</div>
-              <div class="__color-item" data-color="white">Trắng</div>
-              <div class="__color-item" data-color="orange">Cam</div>
-            </div>
-          </div>
-          <div class="_product--quantity-wrapper">
-            <div class="_product--quantity">
-              <p class="__quantity">Số lượng</p>
-            </div>
-            <div class="_product--selected">
-              <button class="btn btn-reduce">-</button>
-              <input type="text" name="" class="input__product--selected" value="1">
-              <button class="btn btn-increase">+</button>
-            </div>
-            <div class="_product--total-products">
-              <p class="total-products">1566</p>
-              <p>sản phẩm</p>
+            <div class="_product--quantity-wrapper">
+              <div class="_product--quantity">
+                <p class="__quantity">Số lượng</p>
+              </div>
+              <div class="_product--selected">
+                <button class="btn btn-reduce">-</button>
+                <input type="text" name="" class="input__product--selected" value="1">
+                <button class="btn btn-increase">+</button>
+              </div>
+              <div class="_product--total-products">
+                <p class="total-products">1566</p>
+                <p>sản phẩm</p>
+              </div>
             </div>
           </div>
           <div class="_product--cart_buy">
@@ -351,7 +342,6 @@ function rederingImgProduct() {
               <i class="fa-solid fa-cart-plus"></i>
               <p>Thêm vào giỏ hàng</p>
             </button>
-            <button class="buy--product">Mua Ngay</button>
           </div>
         </div>
       </div>

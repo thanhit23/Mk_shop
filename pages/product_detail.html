@@ -17,7 +17,10 @@
       <div class="nav navbar-small">
         <ul class="nav nav-list">
           <li class="nav--item">
-            <a href="javascript:void(0)">Sản Phẩm</a>
+            <a href="/index.html">
+              <i class="fa-solid fa-house"></i>
+              Trang chủ
+            </a>
           </li>
           <li class="nav--item">
             <a href="javascript:void(0)">
@@ -26,9 +29,15 @@
             </a>
           </li>
           <li class="nav--item">
-            <a href="./help_center.html">
+            <a href="../pages/help_center.html">
               <i class="fa-solid fa-address-book"></i>
-              Trung Tâm Trợ Giúp
+              Trung Tâm Trợ giúp
+            </a>
+          </li>
+          <li class="nav--item">
+            <a href="./cart.html">
+              <i class="fa-solid fa-cart-shopping icon_cart"></i>
+              Giỏ Hàng
             </a>
           </li>
         </ul>
@@ -40,32 +49,20 @@
             </a>
           </li>
           <li class="nav--item">
-            <a href="/pages/register.html">
+            <a href="../pages/register.html">
+              <i class="fa-solid fa-user"></i>
               Đăng Ký
-              <!-- <div class="avatar-wrapper">
-                <img src="./resource/image/avatar.png" alt="avatar">
-              </div> -->
+            </a>
+          </li>
+          <li class="nav--item search--box">
+            <a href="#" id="nav__search" class="search-btn">
+              <div class="search__box">
+                <input type="text" class="search-txt" name="" placeholder="Nội dung tìm kiếm...">
+                <i class="fa-solid fa-magnifying-glass" name="search-outline"></i>
+              </div>
             </a>
           </li>
         </ul>
-      </div>
-      <div class="header-with-search-wrapper">
-        <div id="logo" class="col-lg-1">
-          <a href="/index.html" >
-            <img src="/resource/image/mk-logo.png" alt="">
-          </a>
-        </div>
-        <div class="input-search_select">
-          <div class="input-search-main">
-            <input class="form-search" placeholder="SĂN IPHONE 11 NGAY CHẦN CHỜ CHI" type="text">
-            <i class="fa-solid fa-magnifying-glass icon_magnifying"></i>
-          </div>
-        </div>
-        <div class="cart-wrapper">
-          <a href="/pages/cart.html" class="cart-link">
-            <i class="fa-solid fa-cart-shopping icon_cart"></i>
-          </a>
-        </div>
       </div>
     </div>
   </header>
@@ -73,22 +70,10 @@
   <footer id="footer">
     <div class="container-footer">
       <div class="footer-list">
-        <div class="footer_item">
-          <p class="_item-title">Chăm sóc khách hàng</p>
-          <ul class="footer__list--content">
-            <li class="--content-item">
-              <a href="javascript:void(0)">Trung Tâm Trợ Giúp</a>
-            </li>
-            <li class="--content-item">
-              <a href="javascript:void(0)">Hướng Dẫn Mua Hàng</a>
-            </li>
-            <li class="--content-item">
-              <a href="javascript:void(0)">Vận Chuyển</a>
-            </li>
-            <li class="--content-item">
-              <a href="javascript:void(0)">Hướng Dẫn Bán Hàng</a>
-            </li>
-          </ul>
+        <div id="logo" class="col-lg-1">
+          <a href="#">
+            <img src="../resource/image/mk-logo.png" alt="">
+          </a>
         </div>
         <div class="footer_item">
           <p class="_item-title">Về MK Shop</p>
@@ -139,7 +124,7 @@
         <div class="footer_item">
           <p class="_item-title">Tải ứng dụng ngay thôi</p>
           <div class="item-download">
-            <img src="/resource/image/qr_code.png" alt="" class="item-download-qr">
+            <img src="./resource/image/qr_code.png" alt="" class="item-download-qr">
             <ul class="footer__list--download">
               <li class="--content-item">
                 <a href="javascript:void(0)" class="item_link-download">

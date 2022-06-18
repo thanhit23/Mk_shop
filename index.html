@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MK Shop</title>
   <link rel="stylesheet" href="./resource/css/style.css">
-  <link rel="stylesheet" href="./resource/css/product_detail.css">
   <link rel="stylesheet" href="./resource/css/header.css">
   <link rel="stylesheet" href="./resource/css/footer.css">
   <link rel="icon" href="./resource/image/mk-logo.png" type="image/x-icon">
@@ -19,7 +18,10 @@
         <div class="nav navbar-small">
           <ul class="nav nav-list">
             <li class="nav--item">
-              <a href="#tabs-product">Sản Phẩm</a>
+              <a href="#">
+                <i class="fa-solid fa-house"></i>
+                Trang chủ
+              </a>
             </li>
             <li class="nav--item">
               <a href="javascript:void(0)">
@@ -33,6 +35,12 @@
                 Trung Tâm Trợ giúp
               </a>
             </li>
+            <li class="nav--item">
+              <a href="./pages/cart.html">
+                <i class="fa-solid fa-cart-shopping icon_cart"></i>
+                Giỏ Hàng
+              </a>
+            </li>
           </ul>
           <ul class="nav nav-list">
             <li class="nav--item">
@@ -43,31 +51,19 @@
             </li>
             <li class="nav--item">
               <a href="./pages/register.html">
+                <i class="fa-solid fa-user"></i>
                 Đăng Ký
-                <!-- <div class="avatar-wrapper">
-                  <img src="./resource/image/avatar.png" alt="avatar">
-                </div> -->
+              </a>
+            </li>
+            <li class="nav--item search--box">
+              <a href="#" id="nav__search" class="search-btn">
+                <div class="search__box">
+                  <input type="text" class="search-txt" name="" placeholder="Nội dung tìm kiếm...">
+                  <i class="fa-solid fa-magnifying-glass" name="search-outline"></i>
+                </div>
               </a>
             </li>
           </ul>
-        </div>
-        <div class="header-with-search-wrapper">
-          <div id="logo" class="col-lg-1">
-            <a href="#" >
-              <img src="./resource/image/mk-logo.png" alt="">
-            </a>
-          </div>
-          <div class="input-search_select">
-            <div class="input-search-main">
-              <input class="form-search" placeholder="SĂN IPHONE 11 NGAY CHẦN CHỜ CHI" type="text">
-              <i class="fa-solid fa-magnifying-glass icon_magnifying"></i>
-            </div>
-          </div>
-          <div class="cart-wrapper">
-            <a href="javascript:void(0)" class="cart-link">
-              <i class="fa-solid fa-cart-shopping icon_cart"></i>
-            </a>
-          </div>
         </div>
       </div>
     </header>
@@ -114,71 +110,71 @@
         </div>
         <div id="tabs-product" class="container-trend">
           <div class="trend-title">
-            <p>Xu hướng tìm kiếm</p>
+            <p>Lượt tìm kiếm nhiều nhất</p>
           </div>
           <div class="trend-product">
             <ul class="trend-list">
               <li class="trend--item">
                 <a href="javascript:void(0)" class="trend--item__link">
                   <div class="trend__product-wrapper">
+                    <div class="_product-image">
+                      <img src="./resource/image/product-trend-sandal.jpeg" alt="">
+                    </div>
                     <div class="_product-content">
                       <p class="__product-name">Dép nữ</p>
                       <p class="__product-quantity">6k+ sản phẩm</p>
                     </div>
-                    <div class="_product-image">
-                      <img src="./resource/image/product-trend-sandal.jpeg" alt="">
-                    </div>
                   </div>
                 </a>
               </li>
               <li class="trend--item">
                 <a href="javascript:void(0)" class="trend--item__link">
                   <div class="trend__product-wrapper">
+                    <div class="_product-image">
+                      <img src="./resource/image/product-trend-crossbody-bag.jpeg" alt="">
+                    </div>
                     <div class="_product-content">
                       <p class="__product-name">Túi đeo chéo</p>
                       <p class="__product-quantity">6k+ sản phẩm</p>
                     </div>
-                    <div class="_product-image">
-                      <img src="./resource/image/product-trend-crossbody-bag.jpeg" alt="">
-                    </div>
                   </div>
                 </a>
               </li>
               <li class="trend--item">
                 <a href="javascript:void(0)" class="trend--item__link">
                   <div class="trend__product-wrapper">
+                    <div class="_product-image">
+                      <img src="./resource/image/product-trend-t-shirt.jpeg" alt="">
+                    </div>
                     <div class="_product-content">
                       <p class="__product-name">Áo phông</p>
                       <p class="__product-quantity">6k+ sản phẩm</p>
                     </div>
-                    <div class="_product-image">
-                      <img src="./resource/image/product-trend-t-shirt.jpeg" alt="">
-                    </div>
                   </div>
                 </a>
               </li>
               <li class="trend--item">
                 <a href="javascript:void(0)" class="trend--item__link">
                   <div class="trend__product-wrapper">
+                    <div class="_product-image">
+                      <img src="./resource/image/prouct-trend-coat.jpeg" alt="">
+                    </div>
                     <div class="_product-content">
                       <p class="__product-name">Áo khoác</p>
                       <p class="__product-quantity">6k+ sản phẩm</p>
                     </div>
-                    <div class="_product-image">
-                      <img src="./resource/image/prouct-trend-coat.jpeg" alt="">
-                    </div>
                   </div>
                 </a>
               </li>
               <li class="trend--item">
                 <a href="javascript:void(0)" class="trend--item__link">
                   <div class="trend__product-wrapper">
+                    <div class="_product-image">
+                      <img src="./resource/image/product-trend-phone-case.jpeg" alt="">
+                    </div>
                     <div class="_product-content">
                       <p class="__product-name">Ốp lưng</p>
                       <p class="__product-quantity">6k+ sản phẩm</p>
-                    </div>
-                    <div class="_product-image">
-                      <img src="./resource/image/product-trend-phone-case.jpeg" alt="">
                     </div>
                   </div>
                 </a>
@@ -188,40 +184,21 @@
         </div>
         <div class="container-product-suggest">
           <div class="product-suggest-title">
-            <p>Gợi ý cho bạn</p>
+            <p>Sản phẩm</p>
           </div>
           <section class="tabs-product-panel">
             <div class="panel__list"></div>
           </section>
-          <div class="selection-page">
-            <div class="selection-wrapper">
-              <div class="selection">
-                xem thêm
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
     <footer id="footer">
       <div class="container-footer">
         <div class="footer-list">
-          <div class="footer_item">
-            <p class="_item-title">Chăm sóc khách hàng</p>
-            <ul class="footer__list--content">
-              <li class="--content-item">
-                <a href="javascript:void(0)">Trung Tâm Trợ Giúp</a>
-              </li>
-              <li class="--content-item">
-                <a href="javascript:void(0)">Hướng Dẫn Mua Hàng</a>
-              </li>
-              <li class="--content-item">
-                <a href="javascript:void(0)">Vận Chuyển</a>
-              </li>
-              <li class="--content-item">
-                <a href="javascript:void(0)">Hướng Dẫn Bán Hàng</a>
-              </li>
-            </ul>
+          <div id="logo" class="col-lg-1">
+            <a href="#" >
+              <img src="./resource/image/mk-logo.png" alt="">
+            </a>
           </div>
           <div class="footer_item">
             <p class="_item-title">Về MK Shop</p>
